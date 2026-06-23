@@ -1,0 +1,26 @@
+/* =========================
+   TIMELINE
+========================= */
+
+.timeline {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+}
+
+.timeline-item a {
+  text-decoration: none;
+
+  color: white;
+  background-color: #444;
+
+  padding: 20px 25px;
+
+  border-radius: 10px;
+
+  transition: 0.3s;
+}
+
+.timeline-item a:hover {
+  background-color: #c49a6c;
+}
