@@ -122,36 +122,6 @@ body {
   border-radius: 8px;
   font-weight: bold;
 }
-/* =========================
-   TIMELINE
-========================= */
-
-.timeline {
-  display: flex;
-  justify-content: center;
-  gap: 30px;
-}
-
-.timeline-item a {
-  text-decoration: none;
-
-  color: white;
-  background-color: #444;
-
-  padding: 20px 25px;
-
-  border-radius: 10px;
-
-  transition: 0.3s;
-}
-
-.nav a:hover {
-  background-color: #333;
-  color: white;
-}
-.banner-btn:hover {
-  background-color: #a67c52;
-}
 
 /* =========================
    SECTION
@@ -187,18 +157,34 @@ section {
   text-align: center;
 }
 /* =========================
-   SECTION
+   TIMELINE
 ========================= */
 
-section {
-  padding: 80px 10%;
+.timeline {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
 }
 
-.section-title {
-  text-align: center;
-  font-size: 36px;
-  margin-bottom: 40px;
-  color: #222;
+.timeline-item a {
+  text-decoration: none;
+
+  color: white;
+  background-color: #444;
+
+  padding: 20px 25px;
+
+  border-radius: 10px;
+
+  transition: 0.3s;
+}
+
+.nav a:hover {
+  background-color: #333;
+  color: white;
+}
+.banner-btn:hover {
+  background-color: #a67c52;
 }
 
 /* =========================
@@ -298,4 +284,63 @@ section {
   display: block;
 
   margin: auto;
+}
+
+/* =========================
+   FOOTER
+========================= */
+
+.footer {
+  background-color: #222;
+  color: white;
+
+  text-align: center;
+
+  padding: 30px;
+}
+
+.footer-contact {
+  margin-bottom: 15px;
+}
+
+.footer p {
+  margin-bottom: 10px;
+}
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media (max-width: 1200px) {
+  .gallery-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .nav {
+    flex-wrap: wrap;
+  }
+
+  .intro-content {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .timeline {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .gallery-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .banner-title {
+    font-size: 36px;
+  }
+
+  .banner-text {
+    font-size: 18px;
+  }
 }
