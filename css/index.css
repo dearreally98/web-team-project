@@ -1,0 +1,58 @@
+/* =========================
+   FOOTER
+========================= */
+
+.footer {
+  background-color: #222;
+  color: white;
+
+  text-align: center;
+
+  padding: 30px;
+}
+
+.footer-contact {
+  margin-bottom: 15px;
+}
+
+.footer p {
+  margin-bottom: 10px;
+}
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media (max-width: 1200px) {
+  .gallery-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .nav {
+    flex-wrap: wrap;
+  }
+
+  .intro-content {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .timeline {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .gallery-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .banner-title {
+    font-size: 36px;
+  }
+
+  .banner-text {
+    font-size: 18px;
+  }
+}
